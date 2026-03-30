@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Geçici olarak hizmet dışı</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; }
     body {
@@ -12,25 +15,34 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      background: #fafafa;
-      color: #1a1a1a;
-      padding: 1.5rem;
-      line-height: 1.6;
+      font-family: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+      background: linear-gradient(165deg, #fff5eb 0%, #ffe8f0 40%, #e8f4ff 100%);
+      color: #5c2d15;
+      padding: 1.75rem;
+      line-height: 1.65;
     }
     main {
-      max-width: 36rem;
+      max-width: 40rem;
       text-align: center;
     }
     p {
       margin: 0;
-      font-size: 1.125rem;
+      font-size: clamp(1.35rem, 4vw, 2rem);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      color: #7a3b1f;
+      text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
+    }
+    p .muted {
+      font-weight: 400;
+      font-size: 0.92em;
+      color: #a64d2a;
     }
   </style>
 </head>
 <body>
   <main>
-    <p>Ticari işlerimize bir süreliğine ara verdiğimizden web sitemiz şu anda hizmet vermemektedir.</p>
+    <p>Ticari işlerimize bir süreliğine ara verdiğimizden <span class="muted">web sitemiz şu anda hizmet vermemektedir.</span></p>
   </main>
 </body>
 </html>
